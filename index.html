@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Generate QR codes easily and quickly with SimplyQR." />
+    <meta name="keywords" content="QR code, SimplyQR, free QR code, create QR code, online QR code" />
+    <meta name="author" content="merazi" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="SimplyQR" />
+    <meta property="og:description" content="Generate QR codes easily and quickly with SimplyQR." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://merazi.github.io/SimplyQR" />
+    <meta property="og:image" content="https://merazi.github.io/img/favicon-light.png" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SimplyQR" />
+    <meta name="twitter:description" content="Generate QR codes easily and quickly with SimplyQR." />
+    <meta name="twitter:image" content="https://merazi.github.io/img/favicon-light.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon-light.png" media="(prefers-color-scheme: light)" />
+    <link rel="icon" href="img/favicon-dark.png" media="(prefers-color-scheme: dark)" />
+
+    <!-- Water.css for styling -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css" />
+
+    <!-- Custom Stylesheet for the layout -->
+    <link rel="stylesheet" href="style/main.css" />
+
+    <title>SimplyQR</title>
+</head>
+
+<body>
+    <main>
+        <h1>Welcome to SimplyQR</h1>
+
+        <div class="canvas-wrapper">
+            <canvas id="qrCanvas" width="240" height="240"></canvas>
+        </div>
+
+        <div class="form-group">
+            <label for="urlInput">Message or URL:</label>
+            <input type="text" id="urlInput" placeholder="Enter your message/URL here">
+        </div>
+
+        <div class="buttons">
+            <button id="generateBtn">Convert</button>
+            <button id="downloadBtn" disabled>Share/Download</button>
+            <button id="aboutBtn">About</button>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

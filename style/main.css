@@ -1,0 +1,65 @@
+/* Center content on screen */
+body {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    /* Changed from flex-start to center */
+    min-height: 90%;
+    overflow-x: hidden;
+    /* 👈 prevents horizontal scroll */
+    box-sizing: border-box;
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Main container with max width for desktop */
+main {
+    padding-top: 5rem;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Form styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* QR code styling */
+.canvas-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+/* Buttons container responsive behavior */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+/* Let buttons grow and take full width on mobile */
+.buttons button {
+    flex: 1 1 100%;
+}
+
+@media (min-width: 600px) {
+    .buttons button {
+        flex: 1 1 auto;
+    }
+}
