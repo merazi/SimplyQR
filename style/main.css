@@ -59,6 +59,12 @@ main {
 }
 
 @media (min-width: 600px) {
+
+    /* Main container with max width for desktop */
+    main {
+        padding-top: 1rem;
+    }
+
     .buttons button {
         flex: 1 1 auto;
     }
